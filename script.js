@@ -15,5 +15,7 @@ const btnEl = document.getElementById("convert-btn")
 
 btnEl.addEventListener( "click", function(){
 
+    console.log(placeholderEl.value)
 
 })
+
