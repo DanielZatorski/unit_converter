@@ -38,9 +38,9 @@ const kilogram = 2.204 //pound
 function conversion(input){
 
     
-    let result_1 = input*meter
-    let result_2 = input*liter
-    let result_3 = input*kilogram
+    const result_1 = input*meter
+    const result_2 = input*liter
+    const result_3 = input*kilogram
     
     results = [result_1,result_2,result_3]
 
