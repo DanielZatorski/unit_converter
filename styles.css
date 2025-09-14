@@ -3,6 +3,7 @@ body{
 
     margin: 0;
     font-family: 'Inter', sans-serif;
+    background-color: #F4F4F4;
 
 }
 
@@ -15,6 +16,24 @@ body{
 
 }
 
+#convert-btn{
+    margin-top: 50px;
+    color: black;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    border: solid 2px #9AABD8 ;
+    border-radius: 10px;
+    font-size: 16px;
+    height: 50px;
+    width: 120px;
+
+}
+
+.title-conversion{
+    font-size: 20px;
+    color:#5A537B;
+    margin-bottom: 10px;
+
+}
 
 .container-1 {
     border: 1px solid #FFFFFF; 
@@ -33,21 +52,33 @@ body{
     border: 1px solid #FFFFFF; 
     padding: 20px;
     margin-bottom: 30px; 
-    background-color: #F4F4F4;
-    margin: 20px; 
+    background-color: white;
+    margin: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+
     }
     
 #placeholder{
     width: 180px;
     height: 70px;
     margin-top: 30px;
-    border: 2px solid #FFFFFF; 
+    border: 2px solid #B295FF; 
     padding: 20px;
     margin-bottom: 30px; 
     background-color: #6943FF;
     font-size: 58px ;
     text-align: center;
     color: #FFFFFF;
-    outline: none
+    outline: none;
+    border-radius: 10px
 
+    }
+
+
+    #result-1, #result-2, #result-3{
+
+        font-size: 14px;
     }
