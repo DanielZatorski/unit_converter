@@ -15,7 +15,39 @@ const btnEl = document.getElementById("convert-btn")
 
 btnEl.addEventListener( "click", function(){
 
-    console.log(placeholderEl.value)
+    console.log(conversion(placeholderEl.value))
+
+    let conversionResult = conversion(placeholderEl.value)
+
+    //console.log(conversionResult)
+    //console.log(conversionResult.length)
+
+    lengthEl.textContent = Number(conversionResult[0]).toFixed(3);
+    volumehEl.textContent = Number(conversionResult[1]).toFixed(3);
+    massEl.textContent = Number(conversionResult[2]).toFixed(3)
 
 })
+
+//define conversion ratios
+
+const meter = 3.281 //feet
+const liter = 0.264 //gallon
+const kilogram = 2.204 //pound
+
+//conversion function
+function conversion(input){
+
+    
+    let result_1 = input*meter
+    let result_2 = input*liter
+    let result_3 = input*kilogram
+    
+    results = [result_1,result_2,result_3]
+
+    return results
+
+}
+
+
+
 
